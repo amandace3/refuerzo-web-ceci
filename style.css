@@ -1,0 +1,205 @@
+/* Reinicia márgenes y espacios */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración general del cuerpo */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ========================= */
+/* MENÚ DE NAVEGACIÓN */
+/* ========================= */
+header{
+    background: #1a001f;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+/* Organización del menú */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Título del menú */
+nav h1{
+    color: #00ffff;
+}
+
+/* Lista del menú */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Links del menú */
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Efecto hover */
+nav ul li a:hover{
+    color: #00ffff;
+}
+
+/* ========================= */
+/* SECCIÓN PRINCIPAL */
+/* ========================= */
+.hero{
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(26,0,31,0.8)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop');
+    
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* Contenido principal */
+.contenido{
+    max-width: 800px;
+}
+
+/* Título principal */
+.contenido h2{
+    font-size: 45px;
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+/* Texto principal */
+.contenido p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Botón */
+.boton{
+    background: #8000ff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Efecto botón */
+.boton:hover{
+    background: #00ffff;
+    color: black;
+}
+
+/* ========================= */
+/* SECCIONES */
+/* ========================= */
+.seccion{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Títulos de sección */
+.seccion h2{
+    color: #00ffff;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+/* Fondo oscuro */
+.oscuro{
+    background: #140018;
+}
+
+/* ========================= */
+/* TARJETAS */
+/* ========================= */
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Diseño de cada tarjeta */
+.card{
+    background: #1f1f1f;
+    padding: 25px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid #8000ff;
+    transition: 0.3s;
+}
+
+/* Hover tarjeta */
+.card:hover{
+    transform: scale(1.05);
+    border-color: #00ffff;
+}
+
+/* Título de tarjeta */
+.card h3{
+    color: #00ffff;
+    margin-bottom: 15px;
+}
+
+/* Lista */
+ul{
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Elementos de lista */
+ul li{
+    margin-bottom: 15px;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+footer{
+    background: #1a001f;
+    text-align: center;
+    padding: 20px;
+    color: #00ffff;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* Adaptación a celulares */
+/* ========================= */
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenido h2{
+        font-size: 30px;
+    }
+
+}
